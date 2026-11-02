@@ -67,7 +67,40 @@
 
     <section>
       <h2>Contact Me</h2>
-      <p><!-- Let’s connect. I’d love to bring your ideas to life. --></p>
+      <p>Let’s connect. I’d love to bring your ideas to life.</p>
+
+      <!-- creating contact form -->
+      <form action="result.html" method="GET">
+      <div>
+        <!-- getting full name -->
+          <label for = "name">Name </label>
+          <input type="text" id="name" name="fullname" required placeholder="Your full name...">
+      </div>
+
+      <div>
+        <!-- getting email -->
+         <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required placeholder="Your email address..." autocomplete="email">
+      </div>
+
+               
+     <div>
+      <!-- drop down for Subject-->
+        <label for="sbj">Subject</label>
+        <select name="subject" id="sbj">
+            <option value="general">General Inquiry</option>
+            <option value="collab">Design Collaboration</option>
+            <option value="exeriment">Creative Experiments</option>
+            <option value="feedback">Portfolio Feedback</option>
+            <option value="other">Other</option>
+        </select>
+     </div>
+
+     <div>
+      <label for="msg">Message</label>
+      <textarea name="message" id="msg"></textarea>
+     </div>
+
        <p><!-- Social Media Icons --></p>
     </section>
 
