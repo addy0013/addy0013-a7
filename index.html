@@ -70,7 +70,21 @@
       <p>Let’s connect. I’d love to bring your ideas to life.</p>
 
       <!-- creating contact form -->
-      <form action="result.html" method="GET">
+       
+      <!-- explaing POST over GET -->
+      <!-- POST is used because a contact form collects personal information
+     and submits data rather than retrieving information.
+     Unlike GET, POST sends the form data in the request body instead
+     of displaying it in the URL.-->
+      <form action="result.html" method="POST">
+
+      <!-- explaining why labels over placeholder -->
+      <!-- Every form control needs a connected label for accessibility.
+     Labels help screen readers identify fields and allow users
+     to click the label to focus the input. Placeholders are only
+     hints and cannot replace labels because they disappear when
+     users start typing. -->
+
       <div>
         <!-- getting full name -->
           <label for = "name">Name </label>
@@ -90,7 +104,7 @@
         <select name="subject" id="sbj">
             <option value="general">General Inquiry</option>
             <option value="collab">Design Collaboration</option>
-            <option value="exeriment">Creative Experiments</option>
+            <option value="experiment">Creative Experiments</option>
             <option value="feedback">Portfolio Feedback</option>
             <option value="other">Other</option>
         </select>
@@ -106,12 +120,12 @@
       <div>
         <!-- preferred contact method -->
         <fieldset>
-            <legend>Preferred Contact Method</legend>
+            <legend>How would you like me to reach you?</legend>
             
             <input type="radio" id="contact-email" name="contact-method" value="email">
             <label for="contact-email">Email</label>
 
-            <input type="radio" id="contact-num" name="contact-method" value="email">
+            <input type="radio" id="contact-num" name="contact-method" value="phone">
             <label for="contact-num">Phone Number</label>
             
             <input type="radio" id="contact-none" name="contact-method" value="none">
@@ -123,6 +137,7 @@
       <div>
         <button type = "submit">Submit</button>
       </div>
+      </form>
 
 
       <!-- Data Table -->
