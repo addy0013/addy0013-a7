@@ -96,9 +96,29 @@
         </select>
      </div>
 
+
      <div>
-      <label for="msg">Message</label>
-      <textarea name="message" id="msg"></textarea>
+      <!-- message  -->
+        <label for="msg">Message</label>
+        <textarea name="message" id="msg"></textarea>
+     </div>
+
+      <div>
+        <!-- preferred contact method -->
+        <fieldset>
+            <legend>Preferred Contact Method</legend>
+            
+            <input type="radio" id="contact-email" name="contact-method" value="email">
+            <label for="contact-email">Email</label>
+
+            <input type="radio" id="contact-num" name="contact-method" value="email">
+            <label for="contact-num">Phone Number</label>
+            
+            <input type="radio" id="contact-none" name="contact-method" value="none">
+            <label for="contact-none">No Preference</label>
+ 
+        </fieldset>
+
      </div>
 
        <p><!-- Social Media Icons --></p>
